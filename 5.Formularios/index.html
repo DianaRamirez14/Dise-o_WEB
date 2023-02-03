@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="" id="form" method=""> <!--inserta un componente diseñado para contener controles con los que el usuario puede interactuar para enviar información de regreso al servidor. Este elemento es comúnmente usado para recolectar información de los visitantes del sitio, como preferencias, comentarios, opiniones y muchas cosas más. También es muy importante en el proceso de acceso que muchos sitios web proveen.
+    action: Indica la página a la que se envían los datos del formulario. Si este atributo está vacío, es la página que contiene el formulario la que se recargará con los datos como parámetros.
+        method: indica el método mediante el que se transfieren las variables del formulario. Su valor puede ser get o post. El método es una característica del protocolo HTTP y afecta a la forma de comunicación, no al contenido de los datos.
+        action: contiene el nombre del agente que procesará los datos remitidos al servidor (por ejemplo, un script de PHP)
+        method: define la manera de enviar los datos al servidor. Los valores posibles son:
+        get: los valores enviados se añaden a la dirección indicada en el atributo action
+        post: los valores se envían de forma separada
+        -->
+        <label for="name">Nombres: </label><!--for: El único atributo que suele utilizarse con la etiqueta <label> es for, que indica el identificador (atributo id) del campo de formulario para el que esta etiqueta hace de título.
+        label: representa una etiqueta que puede ser asociada a un control de formulario, y que se supone provee una descripción corta para éste. Los navegadores pueden enlazar ambos elementos permitiendo que los usuarios establezcan el enfoque sobre el control al hacer clic en su etiqueta-->
+        <input type="text"
+        id="name"
+         value=""
+        placeholder="Introduzca su nombre"
+        maxlength="25"
+        minlength="3"
+        pattern="[a-AZ-z]"
+        required
+        title="Error en datos"
+        autofocus="true"
+        autocomplete="off"
+        spellcheck="true"
+        tabindex="1"><br><br>
+         <!--se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario.Hay disponible una amplia variedad de tipos de datos de entrada y widgets de control,. Este elemento es capaz de proveer muchos tipos diferetes de campos, de acuerdo al valor que presente en el atributo type.
+        type:  este atributo indica los tipos de archivo que el servidor acepta, de otra manera será ignorado.
+        value:  permite establecer el valor inicial de un control, aunque cada control lo utiliza de una forma ligeramente distinta y algunos controles no lo admiten (área de texto, archivo o imagen).
+        En algunos casos (botones) el valor se muestra al usuario y el usuario no puede modificarlo. En otros casos (cajas de texto, contraseña) el valor se muestra en la página y el usuario puede modificarlo 
+        placeholder: Una pista para el usuario sobre lo que puede introducir en el control. El texto no debe contener saltos de línea.
+        maxlenght: Max de caracteres ; min: min de numeros
+        minlenght: Min de caracteres; max: maz de numeros
+        pattern:solamente se puede utilizar en el elemento input. Nos permite definir nuestras propias reglas para validar el valor de entrada usando Regular Expressions (RegEx). Otra vez, si el valor no coincide con el patrón especificado, entonces arrojará un error.
+        required: El atributo required es un valor de tipo booleano que indica si el campo del input está o no vacío; cuando se utiliza, este, avisa a la persona que diligencia el formulario si uno o más campos deben diligenciarse y a su vez, restringe la posibilidad de que el formulario sea enviado.
+        autofocus: La función de este atributo es poner el cursor de manera activa en un input del formulario sin necesidad de hacer click en él.
+        spellcheck:s un atributo enumerado que define si el elemento debe de ser verificado por errores de deletreado. Puede tener los siguientes valores :
+
+        true, que indica que elemento debe de ser checado para errores de deletreado si es posible.
+        false, que indica que el elemento no debe de ser checado para errores de deletreado.
+        tabindex: 
+
+        -->
+        <label for="edad">Edad: </label>
+        <input type="number" 
+        id="edad"
+        placeholder="Introduzca su edad"
+        min="18"
+        max="65"
+        ><br><br>
+
+        <label for="email">E-mail: </label>
+        <input type="email" 
+        id="email"
+        placeholder="Introduzca su correo electronico"
+        ><br><br>
+
+        <label for="password">Contraseña: </label>
+        <input type="password" 
+        id="password"
+        placeholder="Introduzca su contraseña"
+        maxlength="10"
+        minlength="5"
+        ><br><br>
+
+        <label for="date">Fecha: </label>
+        <input type="date" 
+        id="date"
+        placeholder="Introduzca la fecha"
+        ><br><br>
+
+        <label for="color">Color: </label>
+        <input type="color" 
+        id="color"
+        ><br><br>
+
+        <datalist id="datalist"><!---El elemento datalist representa una lista de opciones predefinidas que pueden ser utilizadas para proveer sugerencias en muchos controles de formularios (form). 
+        Mientras que el elemento datalist actúa como un contenedor, las sugerencias son definidas con el elemento option.-->
+            <option value="Enero"></option><!--se usa para representar un item dentro de un <select>-->
+            <option value="Febrero"></option>
+            <option value="Marzo"></option>
+            <option value="Abril"></option>
+
+        </datalist>
+        <hr><!--representa un cambio de tema entre párrafos (por ejemplo, un cambio de escena en una historia, un cambio de tema en una sección)-->
+        <fieldset><!--Representa un conjunto de controles en un formulario (form), opcionalmente agrupados bajo un mismo nombre. Este elemento puede ser particularmente útil en formularios grandes, donde la legibilidad y la facilidad de acceso pueden ser mejoradas mediante la segmentación.-->
+            <legend>Estado Civil</legend><!--crea un título para un grupos los campos (<fieldset>) de un formulario.-->
+            <input type="radio" name="estado" value="casado">Casado
+            <input type="radio" name="estado" value="soltero">Soltero
+            <input type="radio" name="estado" value="viudo">Viudo
+        </fieldset>
+            <label for="lenguajes">Lenguajes de Progrmación</label>
+            <select name="lenguajes" id="lenguajes"> <!--El atributo name permite a un script acceder a su contenido. Es preferible utilizar los dos atributos con el mismo identificador, por motivos de compatibilidad. El atributo action indica la página a la que se envían los datos del formulario.-->
+                <optgroup label="Backend"><!--El elemento optgroup representa un grupo de opciones (option) temáticamente definido, que forma parte de un control select. Las opciones agrupadas pueden ser etiquetadas mediante el atributo label, que usarán los navegadores para mostrar como nombre del grupo.-->
+                    <option value="java">Java</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="c++">C++</option>
+                </optgroup>
+                <optgroup label="Frontend">
+                    <option value="css">Css</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="ts">TS</option>
+                </optgroup>
+            </select>
+            <label for="terminos">¿Acepta términos y condiciones?</label>
+            <input type="checkbox" name="termino" id="termino"><br>
+            <input type="button" value="enviar">
+            <button id="enviar" type="submit">Otro boton</button><!--representa un elemento cliqueable de tipo botón que puede ser utilizado en formularios o en cualquier parte de la página que necesite un botón estándar y simple de aplicar.
+            submit:  sirve para enviar el formulario una vez el usuario ha rellenado todos sus campos y pulsa en este botón. El texto por defecto del botón será Enviar (o equivalente según el idioma). Podemos modificar el texto del botón mediante el atributo value.-->
+
+            </select>
+    </form>
+<script src ="main.js"> </script>    
+</body>
+</html>

@@ -1,0 +1,27 @@
+/* indext.html*/
+*{
+    margin: 0; 
+    padding: 0;
+}
+h1 {
+    border: 2px dotted pink;
+    margin: 20px;
+    padding: 10px 20px 2px 5px;
+}
+
+img {
+    border: 1px  solid rgb(255, 0, 149);
+    image-rendering: pixelated;
+
+    width: 50%;
+    height: 250px;
+    object-fit: scale-down;
+    object-position: top;
+}
+
+/*tablas.html*/
+caption {
+    border: 2px dotted mediumpurple;
+    margin: 20px;
+    padding: 2px 20px 2px 20px;
+}

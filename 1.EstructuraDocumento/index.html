@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de un Documento HTML</title>
+</head>
+<body>
+    <!---Aqui colocamos comentarios-->
+    <header> 
+        <!---Etiquetas, titulo o encabezados-->
+        <h1>Estructura de Documento HTML</h1>
+        <h2>Sub h2</h2>
+        <h3>Sub h3</h3>
+        <h4>Sub h4</h4>
+        <h5>Sub h5</h5>
+        <h6>Sub h6</h6>
+        <!---Menu-->
+        <nav>
+            <!--<li> Se puede hacer lista ordenadas (Son las que va de 1, 2, 5) o no ordenadas (son las que tienen viñetas: *, -) -->
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Service</li>
+                <li>History</li>
+            </ul>
+        </nav>
+    </header>
+    <main><!--Etiqueta que le da el cuerpo o la parte principal de la pag. Se expande sobre el tema central de un documento o la funcionalidad central de una aplicación-->
+        <section> <!-- representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice de contenido de un libro; un tema común y subsecciones relacionadas.-->
+            <article> <!--epresenta una composición auto-contenida en un documento, una página, una aplicación o en un sitio, que se quiere que sea distribuíble y/o reutilizable de manera independiente, por ejemplo, en la redifusión. Algunos ejemplos podrían ser un mensaje en un foro, un artículo de una revista o un periódico-->
+                <h2>Contacts</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus praesentium necessitatibus quae sunt similique. Veniam vero esse, expedita tempora aspernatur ducimus libero ipsam, sequi sed exercitationem assumenda voluptatem eos. Asperiores?</p> <!---Etiqueta de parrafo-->
+            </article>
+        </section>
+        <article>
+            <h2>Servicios</h2>
+            <section>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequatur dolores culpa doloribus animi earum aut obcaecati voluptate repellat aspernatur eos dolor sit autem ex consequuntur ducimus cum, odit nobis?
+            </section>
+        </article>
+        <br> <!--Salto de linea-->
+        <footer> <!---representa un pie de página para el contenido de sección más cercano o el elemento raíz de sección.Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.-->
+            Pie de pagina. Derechos Reservados 
+        </footer>
+    </main>
+    
+</body>
+</html>
