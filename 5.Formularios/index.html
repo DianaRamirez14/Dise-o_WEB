@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Formularios</h1>
-    <form action="" id="form" method=""> <!--inserta un componente diseñado para contener controles con los que el usuario puede interactuar para enviar información de regreso al servidor. Este elemento es comúnmente usado para recolectar información de los visitantes del sitio, como preferencias, comentarios, opiniones y muchas cosas más. También es muy importante en el proceso de acceso que muchos sitios web proveen.
+    <form action="./receive.php" id="form" method="post"> <!--inserta un componente diseñado para contener controles con los que el usuario puede interactuar para enviar información de regreso al servidor. Este elemento es comúnmente usado para recolectar información de los visitantes del sitio, como preferencias, comentarios, opiniones y muchas cosas más. También es muy importante en el proceso de acceso que muchos sitios web proveen.
     action: Indica la página a la que se envían los datos del formulario. Si este atributo está vacío, es la página que contiene el formulario la que se recargará con los datos como parámetros.
         method: indica el método mediante el que se transfieren las variables del formulario. Su valor puede ser get o post. El método es una característica del protocolo HTTP y afecta a la forma de comunicación, no al contenido de los datos.
         action: contiene el nombre del agente que procesará los datos remitidos al servidor (por ejemplo, un script de PHP)
@@ -24,7 +24,6 @@
         placeholder="Introduzca su nombre"
         maxlength="25"
         minlength="3"
-        pattern="[a-AZ-z]"
         required
         title="Error en datos"
         autofocus="true"
@@ -54,12 +53,14 @@
         placeholder="Introduzca su edad"
         min="18"
         max="65"
+        name="edad"
         ><br><br>
 
         <label for="email">E-mail: </label>
         <input type="email" 
         id="email"
         placeholder="Introduzca su correo electronico"
+        name="email"
         ><br><br>
 
         <label for="password">Contraseña: </label>
@@ -68,21 +69,26 @@
         placeholder="Introduzca su contraseña"
         maxlength="10"
         minlength="5"
+        name="password"
         ><br><br>
+
 
         <label for="date">Fecha: </label>
         <input type="date" 
         id="date"
         placeholder="Introduzca la fecha"
+        name="date"
         ><br><br>
 
         <label for="color">Color: </label>
         <input type="color" 
         id="color"
+        name="color"
         ><br><br>
 
         <label for="mes">Mes: </label>
-        <input type="month" id="mes" list="datalist">
+        <input type="month" id="mes" list="datalist"
+        name="mes">
         <datalist id="datalist"><!---El elemento datalist representa una lista de opciones predefinidas que pueden ser utilizadas para proveer sugerencias en muchos controles de formularios (form). 
         Mientras que el elemento datalist actúa como un contenedor, las sugerencias son definidas con el elemento option.-->
             <option value="Enero"></option><!--se usa para representar un item dentro de un <select>-->
@@ -115,10 +121,11 @@
             </select>
             <label for="terminos">¿Acepta términos y condiciones?</label>
             <input type="checkbox" name="termino" id="termino"><br>
-    
+            <input type="submit" id="envio" value="Enviando...">
+
     </form>
-    <input type="submit"  value="enviar">
-     <button id="enviar" type="submit">Otro boton</button><!--representa un elemento cliqueable de tipo botón que puede ser utilizado en formularios o en cualquier parte de la página que necesite un botón estándar y simple de aplicar.
+    
+     <button id="enviar" type="submit">ENVIAR</button><!--representa un elemento cliqueable de tipo botón que puede ser utilizado en formularios o en cualquier parte de la página que necesite un botón estándar y simple de aplicar.
             submit:  sirve para enviar el formulario una vez el usuario ha rellenado todos sus campos y pulsa en este botón. El texto por defecto del botón será Enviar (o equivalente según el idioma). Podemos modificar el texto del botón mediante el atributo value.-->
 <script src ="main.js"> </script>    
 </body>
