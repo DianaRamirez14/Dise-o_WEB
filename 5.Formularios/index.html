@@ -81,6 +81,8 @@
         id="color"
         ><br><br>
 
+        <label for="mes">Mes: </label>
+        <input type="month" id="mes" list="datalist">
         <datalist id="datalist"><!---El elemento datalist representa una lista de opciones predefinidas que pueden ser utilizadas para proveer sugerencias en muchos controles de formularios (form). 
         Mientras que el elemento datalist actúa como un contenedor, las sugerencias son definidas con el elemento option.-->
             <option value="Enero"></option><!--se usa para representar un item dentro de un <select>-->
@@ -113,12 +115,11 @@
             </select>
             <label for="terminos">¿Acepta términos y condiciones?</label>
             <input type="checkbox" name="termino" id="termino"><br>
-            <input type="button" value="enviar">
-            <button id="enviar" type="submit">Otro boton</button><!--representa un elemento cliqueable de tipo botón que puede ser utilizado en formularios o en cualquier parte de la página que necesite un botón estándar y simple de aplicar.
-            submit:  sirve para enviar el formulario una vez el usuario ha rellenado todos sus campos y pulsa en este botón. El texto por defecto del botón será Enviar (o equivalente según el idioma). Podemos modificar el texto del botón mediante el atributo value.-->
-
-            </select>
+    
     </form>
+    <input type="submit"  value="enviar">
+     <button id="enviar" type="submit">Otro boton</button><!--representa un elemento cliqueable de tipo botón que puede ser utilizado en formularios o en cualquier parte de la página que necesite un botón estándar y simple de aplicar.
+            submit:  sirve para enviar el formulario una vez el usuario ha rellenado todos sus campos y pulsa en este botón. El texto por defecto del botón será Enviar (o equivalente según el idioma). Podemos modificar el texto del botón mediante el atributo value.-->
 <script src ="main.js"> </script>    
 </body>
 </html>
