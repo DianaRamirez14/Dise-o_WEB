@@ -1,0 +1,96 @@
+/*  1.Selector por etiqueta: cambia estilo a todas las etiquetas
+    2.Selector por clase: Cambia o midifica el estilo de quien coloque el nombre del estilo en el atributo class
+    3.selector por id: modifica el estilo de quienes posean en atributo id
+    4.Selector universal: *
+    5. Selector por atributo
+    6.Seleccion por sufijos:$ y prefijos:^
+    7.Seleccionde hermanos: ~
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+/*
+
+.container{
+    width: 80%;
+    height: 200px;
+    padding: 3px;
+    text-align: center;
+    margin: 1%;
+    font-size: 20px;
+
+}
+
+.titulo{
+    border: 2px dotted gray;
+    background-color: lightpink;
+    text-align: left;
+    padding: 5px;
+}
+
+div{
+    border: 2px cornflowerblue;
+}
+
+
+/*text-align: Alinea el texto, ya sea en el centro, izquierda o derecha
+font-size: tamaño de la fuente
+font-family:  define una lista de fuentes o familias de fuentes, con un orden de prioridad, para utilizar en un elemento seleccionado.
+dotted: Borde punteado, formado por una serie de puntos separados por espacios
+background-color: que define el color de fondo de un elemento, puede ser el valor de un color o la palabra clave transparent
+Los ID tienen mayor jerarquia
+
+Agrupacion de selectores: Elementos diferentes, que no tienen la misma clase y que necesito seleccionarlo para colocar siero estilo
+
+*/
+/*
+h2, .seccion, #div1
+{
+    text-align: right;
+}
+*/
+[class]{
+    background-color: darkcyan;
+}
+
+#div1{
+    background-color: antiquewhite;
+}
+
+a[href]{
+    text-align: left;
+    margin-left: 4%;
+    color: darkorchid;
+}
+
+/*Utilizando sufijos*/
+
+a[href$=".co"]{
+    color: teal;
+    padding: 10px;
+}
+
+/*Utilizando Prefijo*/
+[class^="ca"]{
+    background: blueviolet;
+}
+
+/*Hermanos*/
+.seccion ~ div{
+    color: greenyellow;
+    font-size: 30px;
+
+}
+
+/*Hijos*/
+.container>section{
+    background-color: chocolate;
+    padding: 15px;
+}
