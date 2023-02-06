@@ -5,6 +5,7 @@
     5. Selector por atributo
     6.Seleccion por sufijos:$ y prefijos:^
     7.Seleccionde hermanos: ~
+    8.Descendencia
 
 
 *{
@@ -93,4 +94,9 @@ a[href$=".co"]{
 .container>section{
     background-color: chocolate;
     padding: 15px;
+}
+
+.menu ul li>a{
+    color: orange;
+
 }

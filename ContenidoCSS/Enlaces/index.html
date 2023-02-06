@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Estilos y Enlaces</title>
+</head>
+<body>
+    <!---Tenemos varias formas de trabajar en CSS:
+    1. A través de la etiqueta styles
+    2. Por la etiqueta link stylesheet
+    3. Por atributo styles ej: styles = "color: white;"
+    -->
+    <style> /* Los class se seleccionan con punto. Ej: .seccion*/
+        *{
+
+        }
+        .seccion{
+            background-color: aquamarine;
+        }
+    </style>
+    <header>
+        <!--No es buena practica usar los estilos directo en la etiqueta-->
+        <h1 id="h1" class="titulo" style="color: tomato;">Estilos con CSS</h1><!---Con JS se usa id como atributo, 
+        si es con estilos es un class, si es con php y es un formulario, y con form es con el atributo name-->
+        <nav>
+            <ul>
+                <li> <a href="www.deportes.co">Deportes</a> </li>
+             <li> <a href="www.animation.co">Animacion</a></li>
+             <li> <a href="www.mininos.co">Gatos</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h2>Subtitulo</h2>
+        <section class="menu">
+            <nav>
+                <ul>
+                    <li> <a href="#">Pasillos</a> </li>
+                 <li> <a href="#">Ropa</a></li>
+                 <li> <a href="#">Animales</a></li>
+    
+                </ul>
+            </nav>
+        </section>
+        <section class="seccion">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illo adipisci atque? Praesentium rem, nihil facere animi quaerat optio quas cumque ex magnam consequuntur, delectus accusamus corrupti similique maiores earum!
+        </section>
+        <div id="div1" class="cajas">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque illo rerum illum voluptate distinctio quos dicta quae placeat recusandae debitis excepturi, eaque tempora. Temporibus fugiat quaerat doloremque cupiditate exercitationem praesentium?</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repellat nemo laudantium cumque assumenda, dolorem error est. Aliquam nobis similique provident! Temporibus itaque eligendi non, ipsam dolores rem eveniet tempora.</div>
+        <div class="cajas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore suscipit nemo aliquam maxime animi qui repudiandae. Minima id facilis pariatur, obcaecati facere quo reprehenderit aspernatur consequatur aliquam laboriosam quaerat ipsum.</div>
+
+    </main>
+
+
+
+</body>
+</html>
