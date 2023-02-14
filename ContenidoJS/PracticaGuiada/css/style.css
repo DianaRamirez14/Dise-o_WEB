@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* box-sizing: La propiedad box-sizing (tamaño de caja) establece como se calcula el ancho y alto total de un elemento. 
+    border-box: si tu necesitas que el elemento mida exactamente lo que especificaste en el width y height (100px x 120px respectivamente), con el valor border-box lo puedes hacer.*/
+}
+
+body{
+    font-family:'Josefin Sans', sans-serif;
+    background-attachment: fixed; /* Controla si la imagen de fondo se mueve o permanece fija cuando se hace scroll en la ventana del navegador*/
+}
+
+header{
+    background: #f25757;
+    background: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%); /* Sirve para hacer un degradado-difuminado*/
+    width: 100vw; /* vw: Ancho de la pantalla*/
+    height: calc(100vh-200px); /*vh: largo de la pantalla*/
+    text-align: center; /*se usa para alinear horizontalmente el contenido de un elemento html*/
+    overflow: hidden; /*overflow: La propiedad overflow permite regular la visiblidad de los contenidos que sobresalen de una caja html.
+    Permite regular si los contenidos que sobresalen se seguirán viendo, si se ocultarán o si aparecerá una barra de scroll en el documento.
+    hidden:  hace que el navegador oculte todos los contenidos que se salen de la caja del elemento*/
+    margin: 0 auto; /*Es una ayuda, que fija 0 en el angulo y y auto en el x, y eso lo centra automaticamente*/
+    background-attachment: fixed;
+    position: relative; /* El valor relative en el atributo position indica que la capa sí forma parte del flujo normal de elementos de la página, por lo que su posición dependerá del lugar donde esté en el código y el flujo HTML.*/
+}
+
+header > img /*> hijo de la etiqueta*/{
+    width: 50%;
+    height: 180px;
+    margin-top: 5%; /*Espacio del margen superior entre el elemnto y la pag*/
+}
+ .ola{
+    position: absolute;
+    bottom:   ;
+ }
