@@ -77,7 +77,7 @@
                 <p class="text-promedio"></p>
                 <button class="btnRegistrar">Registrar</button>                
             </div>       
-    </template>
+    </template> <!--Los template no se renderizan y ayuda a mitigar el reflow, que es cuando se tiene que acomodar muchos elementos. Otro es fragment que crea un mini dom que guarda mil elemnto y solo se tiene que reacomodar una vez. Parecido a un array-->
     <template id="templateProfesor">      
             <div class="card-body">
                 <h3>nombre</h3>
