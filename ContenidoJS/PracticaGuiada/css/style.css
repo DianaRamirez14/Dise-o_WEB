@@ -6,15 +6,15 @@
 }
 
 body{
-    font-family:'Josefin Sans', sans-serif;
+   
     background-attachment: fixed; /* Controla si la imagen de fondo se mueve o permanece fija cuando se hace scroll en la ventana del navegador*/
 }
 
 header{
     background: #f25757;
-    background: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%); /* Sirve para hacer un degradado-difuminado*/
-    width: 100vw; /* vw: Ancho de la pantalla*/
-    height: calc(100vh-200px); /*vh: largo de la pantalla*/
+    background: linear-gradient(to top, #f0d2ca 0%, #c257c2 100%); /* Sirve para hacer un degradado-difuminado*/
+    width: 100%; /* vw: Ancho de la pantalla*/
+    height: 400px; /*vh: largo de la pantalla*/
     text-align: center; /*se usa para alinear horizontalmente el contenido de un elemento html*/
     overflow: hidden; /*overflow: La propiedad overflow permite regular la visiblidad de los contenidos que sobresalen de una caja html.
     Permite regular si los contenidos que sobresalen se seguirán viendo, si se ocultarán o si aparecerá una barra de scroll en el documento.
@@ -24,12 +24,27 @@ header{
     position: relative; /* El valor relative en el atributo position indica que la capa sí forma parte del flujo normal de elementos de la página, por lo que su posición dependerá del lugar donde esté en el código y el flujo HTML.*/
 }
 
-header > img /*> hijo de la etiqueta*/{
+header > img /*> hijo de la  etiqueta*/{
     width: 50%;
     height: 180px;
     margin-top: 5%; /*Espacio del margen superior entre el elemnto y la pag*/
 }
  .ola{
-    position: absolute;
-    bottom:   ;
+    position: absolute; /*hace que un elemento se coloque respecto a su contenedor posicionado mas cercano, si no encuentra ningún contenedor cercano, el elemento se colocara respecto al viewport*/
+    bottom: 0; /*Indica el desplazamiento entre el borde inferior del elemento y la parte inferior de su elemento contenedor*/
+   width: 100%;
+ }
+
+ .form{
+    width: 40%;
+    height: auto;
+    margin: 5% auto;
+    border-radius: 10px; /*Redondea las puntas*/
+    border: 2px solid #3c3d59;
+    padding: 30px 10px; /*es una propiedad o relleno que se crea alrededor del contenido de un elemento dentro de los bordes definidos y sirve para dar formato y diseño a una página web.*/
+    /*text-align: center;*/
+ }
+
+ .form > input, label, button, select {
+    
  }
