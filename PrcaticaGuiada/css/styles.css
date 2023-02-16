@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;/* box-sizing: La propiedad box-sizing (tamaño de caja) establece como se calcula el ancho y alto total de un elemento. 
+    border-box: si tu necesitas que el elemento mida exactamente lo que especificaste en el width y height (100px x 120px respectivamente), con el valor border-box lo puedes hacer.*/
+}
+
+body{
+    
+    font-family:'Josefin Sans', sans-serif;
+    background-attachment: fixed; /* Controla si la imagen de fondo se mueve o permanece fija cuando se hace scroll en la ventana del navegador*/
+
+}
+.header{
+    background: #a05f6f;
+    background: linear-gradient(to top, #f0d2ca 0%, #c257c2 100%); /* Sirve para hacer un degradado-difuminado*/
+    width :100vw;/* vw: Ancho de la pantalla*/
+    height: 400px;/*vh: largo de la pantalla*/
+    text-align: center;/*se usa para alinear horizontalmente el contenido de un elemento html*/
+    overflow: hidden;/*overflow: La propiedad overflow permite regular la visiblidad de los contenidos que sobresalen de una caja html.
+    Permite regular si los contenidos que sobresalen se seguirán viendo, si se ocultarán o si aparecerá una barra de scroll en el documento.
+    hidden:  hace que el navegador oculte todos los contenidos que se salen de la caja del elemento*/
+    margin: 0 auto;/*Es una ayuda, que fija 0 en el angulo y y auto en el x, y eso lo centra automaticamente*/
+    background-attachment: fixed;
+    position: relative; /* El valor relative en el atributo position indica que la capa sí forma parte del flujo normal de elementos de la página, por lo que su posición dependerá del lugar donde esté en el código y el flujo HTML.*/
+    
+}
+.header > img /*> hijo de la  etiqueta*/{
+    width: 50%;
+    height: 180px;
+    margin-top: 5%;/*Espacio del margen superior entre el elemnto y la pag*/
+}
+
+.ola{
+    position: absolute;
+    bottom: 0%;
+    width: 100vw;
+}
+.form{
+    width: 40%;
+    height: auto;
+    margin: 5% auto;
+    border-radius: 10px;
+    border: 2px solid #3C3D59;
+    padding: 30px 10px;
+    text-align: center;
+}
+.form > input,label,button,select{
+    display: inline-block;
+    width: 80%;
+    margin: 3% 0;
+    font-size: 20px;
+
+}
+.form > input{
+    padding: 10px, 2px;
+    border: none;
+    border-bottom: 1px solid #a05f6f;
+    outline: none;
+}
+.form > label{
+    text-align: left;
+    padding: 5px;
+}
+.control-s{
+    margin-top: 2%;
+    border: 1px solid #a05f6f;
+    padding: 8px;
+}
+.btn{
+    background: #f22e76;
+    background: linear-gradient(top, #f22e76, #f25757);
+    background: linear-gradient(to bottom, #f22e76, #f25757);
+    border-radius: 28px;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px,20px;
+    border: 2px solid #f2b366;
+    text-decoration: none;
+
+}
+.bts:hover{
+    background: #86f22e;
+    background: linear-gradient(top, #f2b366, #555840);
+    background: linear-gradient(top, #f2b366, #555840);
+    text-decoration: none;
+}
+.card{
+    width: 60%;
+    margin: 5% auto;
+    border: 2px solid #f22e76;
+    text-align: center;
+}
+.-title-card{
+    padding: 2%;
+}
+.card .text-promedio{
+    font-size: 20px ;
+    color: #f25757;
+}
+.text-aprobado{
+    font-size: 24px;
+    padding: 2% 0;
+}
+.card .btnRegistrar{
+    background: #f2db63;
+    background:linear-gradient(top, #f2db63, #f2b366); 
+    background: linear-gradient(to bottom, #f2db63, #f2b366);
+    border-radius: 24px;
+    padding: 2%;
+    border:1px solid #f22e76;
+}
+.alerta{
+    width: 25%;
+    height: 100px;
+    background-color: #f25757;
+    position: fixed;
+    top: 35%;
+    left: 35%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 7%;
+    border: 1px solid #3C3D59;
+}
+.textAlerta{
+    width: 100%;
+    margin-top: 10%;
+    color: #fff;
+}
+.close{
+    width: 9%;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+@media screen and (max-width: 760px){
+    .form{
+        width: 60%;
+        margin: 2% auto;
+        border: 2px solid #3C3D59;
+        padding: 15px 5px;
+    }
+}
+@media screen and (max-width: 500pxz) {
+    .form{
+        width: 70%;
+        margin: 1% auto 3% auto;
+        border: 1px solid #86f22e;
+        padding: 15px 5px;
+    }
+    .form > input,label,button,select{
+        margin: 2% 0;
+        font-size: 16px;
+    }
+    .btn{
+        font-size: 16px;
+    }
+}
