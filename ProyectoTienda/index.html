@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Enlace a los estilos-->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!--Fuentes-->   
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <title>Sitio Web UE</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./img/kanelass.png" alt="logo kanelas">
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul class="item">
+                        <li><a href="#principal">Principal</a></li>
+                        <li><a href="#historia">Historia</a></li>
+                        <li><a href="#servicios">Servicios</a></li>    
+                        <li><a href="#precios">Precios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#acercade">Acerca de</a></li>                   
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div class="buscador">
+                <li>
+                    <form action="">
+                        <input type="text" class="buscarOculto" name="buscar" id="input_buscar" placeholder="ingresa que quieres buscar">
+                        <a id="buscando">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </form>
+                </li>
+            </div>
+        </div>
+    </header>
+    <main class="main" id="main">
+        <section class="container_p">
+            <h1>Consulta las Ofertas en Accesorios</h1>
+            <p class="offert">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique tenetur libero asperiores rem perferendis fugit alias nobis in suscipit aliquid, perspiciatis labore voluptatem corporis facere ducimus delectus! Placeat, ullam ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nostrum quisquam ut rem distinctio veniam! Aperiam quidem qui mollitia blanditiis labore nisi optio consectetur, quis delectus deleniti tempora? Eligendi, expedita!
+            Eaque eius ab ut quis impedit doloremque perspiciatis earum rerum ipsa magnam sapiente.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus dicta consequuntur illo beatae natus, rerum in nostrum non doloremque nisi necessitatibus ab voluptatum incidunt architecto id sapiente error velit hic? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem modi voluptate fugiat accusamus itaque sapiente quisquam molestias, enim explicabo libero eius distinctio rem quos fugit consequatur iusto maiores aut aperiam?</p>
+            <div class="container_button">
+                <button type="button" class="button_lp">Sí Quiero Ver</button>
+                <button type="button" class="button_lp">Super Ofertas</button>
+            </div>
+
+        </section>
+        <section class="containers container_history">           
+            <h2 class="subTitle">Historia</h2>
+            <p class="text_history">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, reprehenderit corporis laudantium non impedit vitae fugiat natus, tempore et maxime rerum neque? Accusamus soluta ea officia quo praesentium. Ea, dolorem!
+            Expedita doloremque natus libero rem eius alias minima voluptates sint eos consectetur quisquam labore magni, dolorum voluptate non aut, architecto laboriosam quam, sapiente accusamus modi exercitationem. Pariatur asperiores praesentium eligendi.
+            Placeat officia, a ullam ex sapiente eos repellendus repudiandae voluptates eum est numquam. Nostrum nisi voluptatum voluptates possimus, rerum accusamus dolor fuga, excepturi minima inventore rem eius cumque exercitationem ut.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quasi modi magnam ad, quos vitae quae perspiciatis deleniti inventore omnis maxime, cupiditate distinctio eius praesentium placeat repellat, vel quaerat veritatis?
+            Perferendis natus velit expedita praesentium hic commodi iure, nulla eaque dolorum molestiae voluptas dolorem ut dicta laborum autem reprehenderit qui a itaque consequuntur quos illo? Perferendis eveniet ipsa ut tenetur.</p>
+            <button type="button" class="up">Arriba</button>
+        </section>
+        <section class="containers container_services">                      
+            <h2 class="subTitle">Servicios</h2>
+            <div class="service"> 
+                <i class="fas fa-wrench"></i>                
+                <h3 class="subService">Venta de Accesorios</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consectetur accusamus aperiam non! Dicta nisi provident sed qui rerum, magni, cumque accusantium animi impedit, culpa dolor libero voluptate alias aspernatur?</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-shoe-prints"></i>
+                <h3 class="subService">Venta de Zapatos Deportivos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consectetur accusamus aperiam non! Dicta nisi provident sed qui rerum, magni, cumque accusantium animi impedit, culpa dolor libero voluptate alias aspernatur?</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-tshirt"></i>
+                <h3 class="subService">Venta de Ropa a la Medida</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consectetur accusamus aperiam non! Dicta nisi provident sed qui rerum, magni, cumque accusantium animi impedit, culpa dolor libero voluptate alias aspernatur?</p>
+            </div>
+            <button type="button" class="up">Arriba</button>
+        </section>
+        <section class="containers container_price">           
+            <h2 class="subTitle">Lista de precios Ofertas</h2>
+            <ul id="listPrice" class="list-group">
+            </ul>
+            <template id="template">
+                <div class="card_body">
+                    <li class="list-group-item">
+                        <p id="code"></p>
+                        <a href="">${element}</a>
+                        <p id="detail"></p>
+                    </li>
+                </div>
+            </template>
+            <button type="button" class="up">Arriba</button>
+        </section>
+        <section class="containers container_contact">
+            <h2 class="subTitle">Contacto</h2>
+            <div class="elemets_contac">
+                    <form id="form" class="form">                    
+                        <label for="names">Nombres:</label>
+                        <input type="text" id="names">
+                        <label for="lastNames">Apellidos:</label>
+                        <input type="text" id="lastNames">
+                        <label for="mail">Correo Electrónico:</label>
+                        <input type="email" id="mail">
+                        <label for="celphone">Celular:</label>
+                        <input type="number" id="celphone">
+                        <button type="submit" id="btnSend" class="button_send">Enviar</button>
+                        <button type="reset" id="btnClear" class="button_clear">Limpiar</button>
+                    </form>  
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.785140536497!2d-74.08304938543118!3d4.632384043536458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a0f9bb0ce7%3A0x5d71ff487837183c!2sUniempresarial!5e0!3m2!1ses!2sco!4v1676420334929!5m2!1ses!2sco"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <button type="button" class="up">Arriba</button>
+        </section>
+        <section class="containers container_acercade">
+            <h2 class="subTitle">Acerca de...</h2>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima facere ea omnis alias quod velit tempore totam aliquid, quisquam itaque sapiente consequuntur, quaerat eveniet id rerum aliquam odio nisi et.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo neque dolor molestiae et laudantium earum nam voluptate accusantium sequi dignissimos velit exercitationem harum saepe ab, porro maiores ad a.
+                Laudantium quaerat totam doloribus? Minima a nobis aspernatur necessitatibus sunt, laboriosam ullam, eum consequuntur impedit fugit quae sequi? Cumque nemo mollitia velit non quod in ex nesciunt eaque ad sint!
+                Cum doloribus molestias eos quam modi, voluptate eveniet labore adipisci, rerum, impedit nemo accusamus quaerat quo fugit ea laborum. Officiis nulla, ea dolores eveniet soluta ipsum. Libero velit reprehenderit neque.
+                
+            </div>
+            <button type="button" class="up">Arriba</button>
+           
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="container_footer">
+            <h2 class="subTitle">Derechos Reservados Kanelass Fashion Shop</h2>
+            <p>Sígueme en mis redes sociales</p>
+            <ul class="social_net">
+                <li>
+                    <a href="">
+                        <img class="nets" src="./images/instagram.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="nets" src="./images/facebook.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        
+
+    </footer>
+    <script src="https://kit.fontawesome.com/482a4222a7.js" crossorigin="anonymous"></script>
+    <script type="module" src="./dist/app.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>    
+    <script src="https://kit.fontawesome.com/482a4222a7.js" crossorigin="anonymous"></script>
+</body>
+</html>
